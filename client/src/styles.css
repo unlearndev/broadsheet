@@ -1,0 +1,40 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #1b1b1f;
+  --muted: #6b6b73;
+  --line: #e6e3dc;
+  --accent: #c2410c;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+body { margin: 0; }
+a { color: var(--accent); }
+main { max-width: 960px; margin: 0 auto; padding: 32px 24px; }
+
+.topbar { display: flex; align-items: center; gap: 32px; padding: 16px 24px; border-bottom: 1px solid var(--line); }
+.brand { font-family: Georgia, serif; font-weight: 700; font-size: 20px; }
+.topbar nav { display: flex; gap: 16px; }
+.topbar nav a { color: var(--muted); text-decoration: none; }
+.topbar nav a.active { color: var(--fg); font-weight: 600; }
+
+.lede { color: var(--muted); font-size: 18px; }
+.section-header { display: flex; justify-content: space-between; align-items: center; }
+.button, button { background: var(--fg); color: white; border: 0; border-radius: 6px; padding: 8px 14px; font: inherit; text-decoration: none; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: default; }
+
+.issue-list { list-style: none; padding: 0; }
+.issue-row { display: grid; grid-template-columns: 1fr auto 120px; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.issue-row time { color: var(--muted); text-align: right; }
+.badge { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.badge-sent { color: #15803d; }
+.badge-scheduled { color: #b45309; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { text-align: left; padding: 8px; border-bottom: 1px solid var(--line); }
+
+.editor { display: grid; gap: 16px; }
+.title-input { font: 700 28px Georgia, serif; border: 0; background: transparent; }
+.editor textarea { font: 16px/1.6 ui-monospace, monospace; padding: 12px; border: 1px solid var(--line); border-radius: 6px; }
+.preview { border-top: 1px solid var(--line); padding-top: 8px; font-family: Georgia, serif; }

@@ -1,0 +1,416 @@
+{
+  "subscribers": [
+    {
+      "id": "sub_001",
+      "email": "maya.tanaka@example.com",
+      "name": "Maya Tanaka",
+      "isActive": true,
+      "token": "ysfbik9zynjd644qk4b182em",
+      "createdAt": "2026-04-26T21:57:30.795Z"
+    },
+    {
+      "id": "sub_002",
+      "email": "sam.garcia@example.com",
+      "name": "Sam Garcia",
+      "isActive": true,
+      "token": "jsautxz43i4p7f4karaf7ilw",
+      "createdAt": "2025-10-23T06:27:25.428Z"
+    },
+    {
+      "id": "sub_003",
+      "email": "priya.fischer@example.com",
+      "name": "Priya Fischer",
+      "isActive": true,
+      "token": "djc69i3hpcafmt9pnmwoa1p3",
+      "createdAt": "2026-05-22T19:21:57.202Z"
+    },
+    {
+      "id": "sub_004",
+      "email": "tom.smith@example.com",
+      "name": "Tom Smith",
+      "isActive": true,
+      "token": "rpialtk93vd8vved3yq2x5me",
+      "createdAt": "2026-06-30T12:42:58.824Z"
+    },
+    {
+      "id": "sub_005",
+      "email": "aisha.jensen@example.com",
+      "name": "Aisha Jensen",
+      "isActive": true,
+      "token": "scdtq8b87vwsqsihdl9wizkz",
+      "createdAt": "2025-10-28T21:42:21.995Z"
+    },
+    {
+      "id": "sub_006",
+      "email": "leo.evans@example.com",
+      "name": "Leo Evans",
+      "isActive": true,
+      "token": "xi17gbigqi1jchmb3a5czg2l",
+      "createdAt": "2026-01-11T01:32:22.413Z"
+    },
+    {
+      "id": "sub_007",
+      "email": "hannah.brown@example.com",
+      "name": "Hannah Brown",
+      "isActive": true,
+      "token": "yolv26obc6uu6345boobryw4",
+      "createdAt": "2026-05-08T10:14:26.580Z"
+    },
+    {
+      "id": "sub_008",
+      "email": "omar.ahmed@example.com",
+      "name": "Omar Ahmed",
+      "isActive": true,
+      "token": "lfgagzcfyegaf40mnynw3xoa",
+      "createdAt": "2026-06-23T00:34:33.346Z"
+    },
+    {
+      "id": "sub_009",
+      "email": "grace.patel@example.com",
+      "name": null,
+      "isActive": true,
+      "token": "0yodkpzfx4p5ezd9s0kuz8cc",
+      "createdAt": "2025-10-15T08:29:27.252Z"
+    },
+    {
+      "id": "sub_010",
+      "email": "jonas.murphy@example.com",
+      "name": "Jonas Murphy",
+      "isActive": true,
+      "token": "gjupiqqdx03b450xod6w9jxp",
+      "createdAt": "2026-01-29T08:20:03.696Z"
+    },
+    {
+      "id": "sub_011",
+      "email": "chloe.moreau@example.com",
+      "name": "Chloe Moreau",
+      "isActive": false,
+      "token": "8bfwd7jxtyuhgwvw0068e7g9",
+      "createdAt": "2026-08-26T14:48:50.809Z"
+    },
+    {
+      "id": "sub_012",
+      "email": "ravi.nguyen@example.com",
+      "name": null,
+      "isActive": true,
+      "token": "kt7lmlolcoj016hkki4gj8jo",
+      "createdAt": "2026-09-08T09:29:50.301Z"
+    },
+    {
+      "id": "sub_013",
+      "email": "ella.evans@example.com",
+      "name": "Ella Evans",
+      "isActive": true,
+      "token": "iye1ua3eg35d9mxvmmqe73bu",
+      "createdAt": "2026-06-10T08:44:44.708Z"
+    },
+    {
+      "id": "sub_014",
+      "email": "mateo.haddad@example.com",
+      "name": "Mateo Haddad",
+      "isActive": true,
+      "token": "15w69r5fbllnc1q4525am82k",
+      "createdAt": "2025-12-17T17:53:04.760Z"
+    },
+    {
+      "id": "sub_015",
+      "email": "zara.evans@example.com",
+      "name": null,
+      "isActive": true,
+      "token": "xzoy15eou5kd783ydnl678ym",
+      "createdAt": "2026-04-06T10:58:46.195Z"
+    },
+    {
+      "id": "sub_016",
+      "email": "finn.rossi@example.com",
+      "name": "Finn Rossi",
+      "isActive": true,
+      "token": "9ob62l94upsgg8kpk78zwps4",
+      "createdAt": "2026-02-13T02:35:48.960Z"
+    },
+    {
+      "id": "sub_017",
+      "email": "ines.brown@example.com",
+      "name": "Ines Brown",
+      "isActive": false,
+      "token": "pfgmkidg4ai7p4q11j631txt",
+      "createdAt": "2025-12-21T10:58:37.474Z"
+    },
+    {
+      "id": "sub_018",
+      "email": "kwame.evans@example.com",
+      "name": "Kwame Evans",
+      "isActive": true,
+      "token": "gjf77gtaqhy41zbgc61n75um",
+      "createdAt": "2026-07-29T20:18:59.962Z"
+    },
+    {
+      "id": "sub_019",
+      "email": "lucy.moreau@example.com",
+      "name": "Lucy Moreau",
+      "isActive": true,
+      "token": "3trvzx181264gwm8t9dm8lxa",
+      "createdAt": "2025-10-04T20:41:07.377Z"
+    },
+    {
+      "id": "sub_020",
+      "email": "noah.rossi@example.com",
+      "name": "Noah Rossi",
+      "isActive": true,
+      "token": "hqjr2fphf3wv5t6dfy11tsuv",
+      "createdAt": "2026-09-06T09:57:28.447Z"
+    },
+    {
+      "id": "sub_021",
+      "email": "sofia.dubois@example.com",
+      "name": "Sofia Dubois",
+      "isActive": true,
+      "token": "nk0rjhqcqdgz6q8a1tjo2ls6",
+      "createdAt": "2026-02-16T14:53:14.563Z"
+    },
+    {
+      "id": "sub_022",
+      "email": "dev.silva@example.com",
+      "name": "Dev Silva",
+      "isActive": true,
+      "token": "sgf9fzq3ycnett6qjsax2i3i",
+      "createdAt": "2026-04-24T16:33:44.450Z"
+    },
+    {
+      "id": "sub_023",
+      "email": "amara.kim@example.com",
+      "name": "Amara Kim",
+      "isActive": true,
+      "token": "8cbybcwbauler90q32rj0re9",
+      "createdAt": "2026-09-28T06:45:04.830Z"
+    },
+    {
+      "id": "sub_024",
+      "email": "felix.smith@example.com",
+      "name": "Felix Smith",
+      "isActive": true,
+      "token": "i4lt678ezkpazr61jvp7qdoh",
+      "createdAt": "2025-11-20T01:56:57.971Z"
+    },
+    {
+      "id": "sub_025",
+      "email": "nadia.moreau@example.com",
+      "name": "Nadia Moreau",
+      "isActive": true,
+      "token": "5gm8gme1rwze15fcdotu1l6c",
+      "createdAt": "2026-10-24T08:20:52.877Z"
+    },
+    {
+      "id": "sub_026",
+      "email": "hugo.rossi@example.com",
+      "name": "Hugo Rossi",
+      "isActive": true,
+      "token": "aqako1l5s0le2homacr9ccd5",
+      "createdAt": "2025-10-28T12:16:07.652Z"
+    },
+    {
+      "id": "sub_027",
+      "email": "rosa.dubois@example.com",
+      "name": "Rosa Dubois",
+      "isActive": true,
+      "token": "f13f5cz26k21o87xruoxv3kd",
+      "createdAt": "2026-07-19T09:31:45.163Z"
+    },
+    {
+      "id": "sub_028",
+      "email": "ike.kim@example.com",
+      "name": "Ike Kim",
+      "isActive": true,
+      "token": "4zsgap2d7ehxpan9a0dm71u7",
+      "createdAt": "2026-01-23T04:14:01.975Z"
+    },
+    {
+      "id": "sub_029",
+      "email": "mei.jensen@example.com",
+      "name": "Mei Jensen",
+      "isActive": true,
+      "token": "8v88e2l88nja1v7cpfr5635t",
+      "createdAt": "2025-10-14T11:16:16.992Z"
+    },
+    {
+      "id": "sub_030",
+      "email": "arlo.tanaka@example.com",
+      "name": "Arlo Tanaka",
+      "isActive": true,
+      "token": "t83y91c3sdm5xzpik6wg1hbk",
+      "createdAt": "2025-12-11T21:36:30.075Z"
+    },
+    {
+      "id": "sub_031",
+      "email": "yara.rossi@example.com",
+      "name": null,
+      "isActive": false,
+      "token": "ju5aeeesjphj8rnechfdqf7e",
+      "createdAt": "2026-01-13T09:23:13.495Z"
+    },
+    {
+      "id": "sub_032",
+      "email": "ben.garcia@example.com",
+      "name": "Ben Garcia",
+      "isActive": true,
+      "token": "lbxxil5ufobxd49l0d25dtdr",
+      "createdAt": "2025-10-30T07:10:18.186Z"
+    },
+    {
+      "id": "sub_033",
+      "email": "lena.kim@example.com",
+      "name": "Lena Kim",
+      "isActive": true,
+      "token": "6lghhhd2rgzn8f8u6jm3h41k",
+      "createdAt": "2025-12-24T00:43:33.866Z"
+    },
+    {
+      "id": "sub_034",
+      "email": "kai.brown@example.com",
+      "name": "Kai Brown",
+      "isActive": false,
+      "token": "1beuccpbju2qvjvkprtjis9w",
+      "createdAt": "2026-07-26T12:34:00.264Z"
+    },
+    {
+      "id": "sub_035",
+      "email": "esme.kowalski@example.com",
+      "name": null,
+      "isActive": true,
+      "token": "0hktc7inv90z5aedxdne9c0x",
+      "createdAt": "2026-05-21T14:10:36.060Z"
+    },
+    {
+      "id": "sub_036",
+      "email": "theo.tanaka@example.com",
+      "name": "Theo Tanaka",
+      "isActive": true,
+      "token": "qetbnhgue46r9rp29w3imoc1",
+      "createdAt": "2026-07-08T17:09:10.418Z"
+    },
+    {
+      "id": "sub_037",
+      "email": "anya.smith@example.com",
+      "name": "Anya Smith",
+      "isActive": true,
+      "token": "2e2qilo1ppu2c7vpi6fw3frw",
+      "createdAt": "2026-06-14T15:14:48.872Z"
+    },
+    {
+      "id": "sub_038",
+      "email": "jude.ahmed@example.com",
+      "name": "Jude Ahmed",
+      "isActive": true,
+      "token": "d22s2qypbk5l32tcnxeh2aqw",
+      "createdAt": "2025-10-13T04:49:09.611Z"
+    },
+    {
+      "id": "sub_039",
+      "email": "mira.rossi@example.com",
+      "name": "Mira Rossi",
+      "isActive": true,
+      "token": "ta6pzk3jls2m7ihycmln0yc1",
+      "createdAt": "2026-07-09T02:55:25.956Z"
+    },
+    {
+      "id": "sub_040",
+      "email": "owen.kim@example.com",
+      "name": "Owen Kim",
+      "isActive": true,
+      "token": "9x5whcqnafvmbxlj8ifrzqk7",
+      "createdAt": "2026-10-27T04:00:59.003Z"
+    }
+  ],
+  "issues": [
+    {
+      "id": "iss_001",
+      "title": "Why we started this",
+      "body": "Why we started this.\n\nThis is the body of issue 1. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-04-22T08:00:00.000Z",
+      "createdAt": "2026-04-20T00:00:00.000Z"
+    },
+    {
+      "id": "iss_002",
+      "title": "The tools we actually use",
+      "body": "The tools we actually use.\n\nThis is the body of issue 2. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-05-06T08:00:00.000Z",
+      "createdAt": "2026-05-04T00:00:00.000Z"
+    },
+    {
+      "id": "iss_003",
+      "title": "Notes from the road",
+      "body": "Notes from the road.\n\nThis is the body of issue 3. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-05-20T08:00:00.000Z",
+      "createdAt": "2026-05-18T00:00:00.000Z"
+    },
+    {
+      "id": "iss_004",
+      "title": "What a year of writing taught us",
+      "body": "What a year of writing taught us.\n\nThis is the body of issue 4. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-06-03T08:00:00.000Z",
+      "createdAt": "2026-06-01T00:00:00.000Z"
+    },
+    {
+      "id": "iss_005",
+      "title": "Small teams, big lists",
+      "body": "Small teams, big lists.\n\nThis is the body of issue 5. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-06-17T08:00:00.000Z",
+      "createdAt": "2026-06-15T00:00:00.000Z"
+    },
+    {
+      "id": "iss_006",
+      "title": "The quiet launch",
+      "body": "The quiet launch.\n\nThis is the body of issue 6. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-07-01T08:00:00.000Z",
+      "createdAt": "2026-06-29T00:00:00.000Z"
+    },
+    {
+      "id": "iss_007",
+      "title": "Reading list: autumn",
+      "body": "Reading list: autumn.\n\nThis is the body of issue 7. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "sent",
+      "scheduledFor": null,
+      "sentAt": "2026-07-15T08:00:00.000Z",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "iss_008",
+      "title": "Behind the numbers",
+      "body": "Behind the numbers.\n\nThis is the body of issue 8. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "scheduled",
+      "scheduledFor": "2026-11-12T08:00:00.000Z",
+      "sentAt": null,
+      "createdAt": "2026-07-27T00:00:00.000Z"
+    },
+    {
+      "id": "iss_009",
+      "title": "Café Society",
+      "body": "Café Society.\n\nThis is the body of issue 9. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "draft",
+      "scheduledFor": null,
+      "sentAt": null,
+      "createdAt": "2026-08-10T00:00:00.000Z"
+    },
+    {
+      "id": "iss_010",
+      "title": "Five things we got wrong",
+      "body": "Five things we got wrong.\n\nThis is the body of issue 10. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
+      "status": "draft",
+      "scheduledFor": null,
+      "sentAt": null,
+      "createdAt": "2026-08-24T00:00:00.000Z"
+    }
+  ]
+}
