@@ -1,14 +1,20 @@
-import axios from 'axios'
 import type { Issue, Subscriber } from '../../shared/types'
 
-const client = axios.create({ baseURL: '/api' })
+async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
+  const res = await fetch(`/api${path}`, {
+    ...init,
+    headers: { 'Content-Type': 'application/json', ...init.headers },
+  })
+  if (!res.ok) throw new Error(`${init.method ?? 'GET'} ${path} failed with ${res.status}`)
+  return res.json() as Promise<T>
+}
 
 export const api = {
-  issues: () => client.get<Issue[]>('/issues').then((res) => res.data),
-  issue: (id: string) => client.get<Issue>(`/issues/${id}`).then((res) => res.data),
+  issues: () => request<Issue[]>('/issues'),
+  issue: (id: string) => request<Issue>(`/issues/${id}`),
   createIssue: (input: { title: string; body: string }) =>
-    client.post<Issue>('/issues', input).then((res) => res.data),
+    request<Issue>('/issues', { method: 'POST', body: JSON.stringify(input) }),
   updateIssue: (id: string, input: { title: string; body: string }) =>
-    client.put<Issue>(`/issues/${id}`, input).then((res) => res.data),
-  subscribers: () => client.get<Subscriber[]>('/subscribers').then((res) => res.data),
+    request<Issue>(`/issues/${id}`, { method: 'PUT', body: JSON.stringify(input) }),
+  subscribers: () => request<Subscriber[]>('/subscribers'),
 }
