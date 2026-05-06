@@ -17,4 +17,6 @@ export const api = {
   updateIssue: (id: string, input: { title: string; body: string }) =>
     request<Issue>(`/issues/${id}`, { method: 'PUT', body: JSON.stringify(input) }),
   subscribers: () => request<Subscriber[]>('/subscribers'),
+  subscribe: (input: { email: string; name: string }) =>
+    request<Subscriber>('/subscribers', { method: 'POST', body: JSON.stringify(input) }),
 }

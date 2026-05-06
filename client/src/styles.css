@@ -38,3 +38,8 @@ button:disabled { opacity: 0.5; cursor: default; }
 .title-input { font: 700 28px Georgia, serif; border: 0; background: transparent; }
 .editor textarea { font: 16px/1.6 ui-monospace, monospace; padding: 12px; border: 1px solid var(--line); border-radius: 6px; }
 .preview { border-top: 1px solid var(--line); padding-top: 8px; font-family: Georgia, serif; }
+
+.subscribe { max-width: 420px; margin: 48px auto; }
+.subscribe-form { display: grid; gap: 12px; }
+.subscribe-form input { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; }
+.error { color: #b91c1c; }

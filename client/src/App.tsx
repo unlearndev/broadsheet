@@ -2,6 +2,7 @@ import { NavLink, Route, Routes } from 'react-router'
 import Dashboard from './pages/Dashboard'
 import IssueEditor from './pages/IssueEditor'
 import Issues from './pages/Issues'
+import Subscribe from './pages/Subscribe'
 import Subscribers from './pages/Subscribers'
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/issues/new" element={<IssueEditor />} />
           <Route path="/issues/:id" element={<IssueEditor />} />
           <Route path="/subscribers" element={<Subscribers />} />
+          <Route path="/subscribe" element={<Subscribe />} />
         </Routes>
       </main>
     </div>
