@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { sendIssue } from '../lib/sendIssue'
 import { allIssues, createIssue, findIssue, updateIssue } from '../store/issues'
 
 const issues = new Hono()
@@ -24,6 +25,14 @@ issues.put('/:id', async (c) => {
     ...(body !== undefined && { body }),
   })
   return issue ? c.json(issue) : c.json({ error: 'Issue not found' }, 404)
+})
+
+issues.post('/:id/send', async (c) => {
+  const issue = findIssue(c.req.param('id'))
+  if (!issue) return c.json({ error: 'Issue not found' }, 404)
+  if (issue.status === 'sent') return c.json({ error: 'This issue has already been sent.' }, 409)
+
+  return c.json(await sendIssue(issue))
 })
 
 export default issues

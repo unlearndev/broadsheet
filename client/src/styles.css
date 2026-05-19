@@ -43,3 +43,6 @@ button:disabled { opacity: 0.5; cursor: default; }
 .subscribe-form { display: grid; gap: 12px; }
 .subscribe-form input { font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; }
 .error { color: #b91c1c; }
+.actions { display: flex; gap: 12px; align-items: center; }
+button.secondary { background: transparent; color: var(--fg); border: 1px solid var(--fg); }
+.notice { color: #15803d; }

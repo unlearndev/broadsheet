@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { isValidEmail } from '../../shared/validation'
+import { sendTemplate } from '../emails/render'
 import { subscribers as repo } from '../store/SubscriberRepository'
 
 const subscribers = new Hono()
@@ -12,7 +13,11 @@ subscribers.post('/', async (c) => {
     return c.json({ errors: { email: 'Enter a valid email address.' } }, 422)
   }
 
-  return c.json(repo.subscribe(email, name), 201)
+  const isNew = !repo.findByEmail(email)
+  const subscriber = repo.subscribe(email, name)
+  if (isNew) await sendTemplate('welcome', subscriber)
+
+  return c.json(subscriber, 201)
 })
 
 export default subscribers

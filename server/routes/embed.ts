@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { isValidEmail } from '../../shared/validation'
+import { sendTemplate } from '../emails/render'
 import { subscribers } from '../store/SubscriberRepository'
 
 const embed = new Hono()
@@ -17,7 +18,9 @@ embed.post('/subscribe', async (c) => {
     return c.json({ ok: false, message: 'That email address doesn’t look right.' }, 422)
   }
 
-  subscribers.subscribe(input.email)
+  const isNew = !subscribers.findByEmail(input.email)
+  const subscriber = subscribers.subscribe(input.email)
+  if (isNew) await sendTemplate('welcome', subscriber)
 
   // Same response whether or not they were already subscribed.
   return c.json({ ok: true, message: 'Thanks! You’re on the list.' })
