@@ -27,6 +27,16 @@ issues.put('/:id', async (c) => {
   return issue ? c.json(issue) : c.json({ error: 'Issue not found' }, 404)
 })
 
+issues.post('/:id/schedule', async (c) => {
+  const { scheduledFor } = await c.req.json<{ scheduledFor?: string }>()
+  if (!scheduledFor || Number.isNaN(Date.parse(scheduledFor)) || Date.parse(scheduledFor) < Date.now()) {
+    return c.json({ errors: { scheduledFor: 'Pick a time in the future.' } }, 422)
+  }
+
+  const issue = updateIssue(c.req.param('id'), { status: 'scheduled', scheduledFor: new Date(scheduledFor).toISOString() })
+  return issue ? c.json(issue) : c.json({ error: 'Issue not found' }, 404)
+})
+
 issues.post('/:id/send', async (c) => {
   const issue = findIssue(c.req.param('id'))
   if (!issue) return c.json({ error: 'Issue not found' }, 404)

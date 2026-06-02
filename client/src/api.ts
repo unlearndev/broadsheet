@@ -16,6 +16,8 @@ export const api = {
     request<Issue>('/issues', { method: 'POST', body: JSON.stringify(input) }),
   updateIssue: (id: string, input: { title: string; body: string }) =>
     request<Issue>(`/issues/${id}`, { method: 'PUT', body: JSON.stringify(input) }),
+  scheduleIssue: (id: string, scheduledFor: string) =>
+    request<Issue>(`/issues/${id}/schedule`, { method: 'POST', body: JSON.stringify({ scheduledFor }) }),
   sendIssue: (id: string) =>
     request<{ sent: number; failed: number }>(`/issues/${id}/send`, { method: 'POST' }),
   subscribers: () => request<Subscriber[]>('/subscribers'),

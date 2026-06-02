@@ -11,6 +11,7 @@ export default function IssueEditor() {
   const [status, setStatus] = useState<IssueStatus>('draft')
   const [saving, setSaving] = useState(false)
   const [notice, setNotice] = useState<string | null>(null)
+  const [sendAt, setSendAt] = useState('')
 
   useEffect(() => {
     if (!id) return
@@ -26,6 +27,13 @@ export default function IssueEditor() {
     const issue = id ? await api.updateIssue(id, { title, body }) : await api.createIssue({ title, body })
     setSaving(false)
     if (!id) navigate(`/issues/${issue.id}`)
+  }
+
+  async function schedule() {
+    if (!id || !sendAt) return
+    const issue = await api.scheduleIssue(id, new Date(sendAt).toISOString())
+    setStatus(issue.status)
+    setNotice(`Scheduled for ${new Date(sendAt).toLocaleString()}.`)
   }
 
   async function send() {
@@ -50,9 +58,15 @@ export default function IssueEditor() {
           {saving ? 'Saving…' : 'Save draft'}
         </button>
         {id && status !== 'sent' && (
-          <button className="secondary" onClick={send}>
-            Send now
-          </button>
+          <>
+            <input type="datetime-local" value={sendAt} onChange={(e) => setSendAt(e.target.value)} />
+            <button className="secondary" onClick={schedule} disabled={!sendAt}>
+              Schedule
+            </button>
+            <button className="secondary" onClick={send}>
+              Send now
+            </button>
+          </>
         )}
         {notice && <span className="notice">{notice}</span>}
       </div>
