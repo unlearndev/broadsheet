@@ -1,14 +1,13 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { createApp } from '../app'
 import { db, useMemoryDb } from '../store/db'
+import { makeSubscriber } from '../test/fixtures'
 
 const app = createApp()
 
 beforeEach(() => {
   useMemoryDb({
-    subscribers: [
-      { id: 'sub_1', email: 'ada@example.com', name: 'Ada', isActive: true, token: 'tok_ada', createdAt: '2026-01-01T00:00:00Z' },
-    ],
+    subscribers: [makeSubscriber({ token: 'tok_ada' })],
   })
 })
 

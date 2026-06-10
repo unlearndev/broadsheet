@@ -3,6 +3,8 @@ export interface Subscriber {
   email: string
   name: string | null
   isActive: boolean
+  tier: 'free' | 'paid'
+  renewsAt: string | null
   token: string
   createdAt: string
 }

@@ -20,6 +20,10 @@ export class SubscriberRepository extends BaseRepository<Subscriber> {
     return this.where((subscriber) => subscriber.isActive)
   }
 
+  paid(): Subscriber[] {
+    return this.where((subscriber) => subscriber.isActive && subscriber.tier === 'paid')
+  }
+
   subscribe(email: string, name: string | null = null): Subscriber {
     const existing = this.findByEmail(email)
     if (existing) {
@@ -32,6 +36,8 @@ export class SubscriberRepository extends BaseRepository<Subscriber> {
       email: email.trim().toLowerCase(),
       name: name?.trim() || null,
       isActive: true,
+      tier: 'free',
+      renewsAt: null,
       token: randomUUID().replaceAll('-', ''),
       createdAt: new Date().toISOString(),
     })

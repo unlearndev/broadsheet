@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { createApp } from '../app'
 import { useMemoryDb } from '../store/db'
+import { makeIssue } from '../test/fixtures'
 
 const app = createApp()
 
@@ -33,8 +34,8 @@ describe('issues', () => {
   it('lists issues newest first', async () => {
     useMemoryDb({
       issues: [
-        { id: 'a', title: 'Old', body: '', status: 'sent', scheduledFor: null, sentAt: null, createdAt: '2026-01-01T00:00:00Z' },
-        { id: 'b', title: 'New', body: '', status: 'draft', scheduledFor: null, sentAt: null, createdAt: '2026-02-01T00:00:00Z' },
+        makeIssue({ id: 'a', title: 'Old', status: 'sent', createdAt: '2026-01-01T00:00:00Z' }),
+        makeIssue({ id: 'b', title: 'New', createdAt: '2026-02-01T00:00:00Z' }),
       ],
     })
 

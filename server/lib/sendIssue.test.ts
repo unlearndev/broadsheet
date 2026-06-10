@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { db, useMemoryDb } from '../store/db'
+import { makeIssue, makeSubscriber } from '../test/fixtures'
 import { clearOutbox, outboxEmails } from './mailer'
 import { sendIssue } from './sendIssue'
 
@@ -7,12 +8,10 @@ beforeEach(() => {
   clearOutbox()
   useMemoryDb({
     subscribers: [
-      { id: 'sub_1', email: 'ada@example.com', name: 'Ada', isActive: true, token: 'tok_ada', createdAt: '2026-01-01T00:00:00Z' },
-      { id: 'sub_2', email: 'bo@example.com', name: null, isActive: false, token: 'tok_bo', createdAt: '2026-01-01T00:00:00Z' },
+      makeSubscriber({ id: 'sub_1', email: 'ada@example.com', token: 'tok_ada' }),
+      makeSubscriber({ id: 'sub_2', email: 'bo@example.com', isActive: false, token: 'tok_bo' }),
     ],
-    issues: [
-      { id: 'iss_1', title: 'Hello', body: 'First.\n\nSecond.', status: 'draft', scheduledFor: null, sentAt: null, createdAt: '2026-01-01T00:00:00Z' },
-    ],
+    issues: [makeIssue()],
   })
 })
 

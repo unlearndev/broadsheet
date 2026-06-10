@@ -17,6 +17,7 @@ export default function Subscribers() {
           <tr>
             <th>Email</th>
             <th>Name</th>
+            <th>Plan</th>
             <th>Status</th>
           </tr>
         </thead>
@@ -25,6 +26,7 @@ export default function Subscribers() {
             <tr key={subscriber.id}>
               <td>{subscriber.email}</td>
               <td>{subscriber.name ?? '—'}</td>
+              <td>{subscriber.tier === 'paid' ? 'Paid' : 'Free'}</td>
               <td>{subscriber.isActive ? 'Active' : 'Unsubscribed'}</td>
             </tr>
           ))}

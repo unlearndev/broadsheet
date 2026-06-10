@@ -5,320 +5,400 @@
       "email": "maya.tanaka@example.com",
       "name": "Maya Tanaka",
       "isActive": true,
-      "token": "ysfbik9zynjd644qk4b182em",
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "sfbik9zynjd644qk4b182emx",
       "createdAt": "2026-04-26T21:57:30.795Z"
     },
     {
       "id": "sub_002",
-      "email": "sam.garcia@example.com",
-      "name": "Sam Garcia",
+      "email": "sam.okafor@example.com",
+      "name": "Sam Okafor",
       "isActive": true,
-      "token": "jsautxz43i4p7f4karaf7ilw",
-      "createdAt": "2025-10-23T06:27:25.428Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "autxz43i4p7f4karaf7ilw0v",
+      "createdAt": "2026-01-16T12:07:08.404Z"
     },
     {
       "id": "sub_003",
-      "email": "priya.fischer@example.com",
-      "name": "Priya Fischer",
-      "isActive": true,
-      "token": "djc69i3hpcafmt9pnmwoa1p3",
-      "createdAt": "2026-05-22T19:21:57.202Z"
+      "email": "priya.kim@example.com",
+      "name": "Priya Kim",
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "c69i3hpcafmt9pnmwoa1p3gy",
+      "createdAt": "2026-06-01T14:52:49.030Z"
     },
     {
       "id": "sub_004",
-      "email": "tom.smith@example.com",
-      "name": "Tom Smith",
+      "email": "tom.murphy@example.com",
+      "name": "Tom Murphy",
       "isActive": true,
-      "token": "rpialtk93vd8vved3yq2x5me",
-      "createdAt": "2026-06-30T12:42:58.824Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "altk93vd8vved3yq2x5meqc6",
+      "createdAt": "2026-08-02T15:05:19.403Z"
     },
     {
       "id": "sub_005",
-      "email": "aisha.jensen@example.com",
-      "name": "Aisha Jensen",
-      "isActive": true,
-      "token": "scdtq8b87vwsqsihdl9wizkz",
-      "createdAt": "2025-10-28T21:42:21.995Z"
+      "email": "aisha.haddad@example.com",
+      "name": null,
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "tq8b87vwsqsihdl9wizkz5jc",
+      "createdAt": "2026-07-11T12:11:31.664Z"
     },
     {
       "id": "sub_006",
-      "email": "leo.evans@example.com",
-      "name": "Leo Evans",
+      "email": "leo.murphy@example.com",
+      "name": "Leo Murphy",
       "isActive": true,
-      "token": "xi17gbigqi1jchmb3a5czg2l",
-      "createdAt": "2026-01-11T01:32:22.413Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "gbigqi1jchmb3a5czg2lntpy",
+      "createdAt": "2026-08-04T15:23:52.871Z"
     },
     {
       "id": "sub_007",
-      "email": "hannah.brown@example.com",
-      "name": "Hannah Brown",
+      "email": "hannah.fischer@example.com",
+      "name": "Hannah Fischer",
       "isActive": true,
-      "token": "yolv26obc6uu6345boobryw4",
-      "createdAt": "2026-05-08T10:14:26.580Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "6obc6uu6345boobryw4yxa3u",
+      "createdAt": "2026-06-26T09:51:04.176Z"
     },
     {
       "id": "sub_008",
-      "email": "omar.ahmed@example.com",
-      "name": "Omar Ahmed",
-      "isActive": true,
-      "token": "lfgagzcfyegaf40mnynw3xoa",
-      "createdAt": "2026-06-23T00:34:33.346Z"
+      "email": "omar.haddad@example.com",
+      "name": null,
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "zcfyegaf40mnynw3xoabbmsg",
+      "createdAt": "2025-12-05T04:01:45.148Z"
     },
     {
       "id": "sub_009",
-      "email": "grace.patel@example.com",
-      "name": null,
-      "isActive": true,
-      "token": "0yodkpzfx4p5ezd9s0kuz8cc",
-      "createdAt": "2025-10-15T08:29:27.252Z"
+      "email": "grace.fischer@example.com",
+      "name": "Grace Fischer",
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "pzfx4p5ezd9s0kuz8cctkmhw",
+      "createdAt": "2026-07-03T09:21:28.541Z"
     },
     {
       "id": "sub_010",
-      "email": "jonas.murphy@example.com",
-      "name": "Jonas Murphy",
+      "email": "jonas.smith@example.com",
+      "name": "Jonas Smith",
       "isActive": true,
-      "token": "gjupiqqdx03b450xod6w9jxp",
-      "createdAt": "2026-01-29T08:20:03.696Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "qdx03b450xod6w9jxp83wcx8",
+      "createdAt": "2026-01-13T13:48:05.215Z"
     },
     {
       "id": "sub_011",
-      "email": "chloe.moreau@example.com",
-      "name": "Chloe Moreau",
+      "email": "chloe.patel@example.com",
+      "name": "Chloe Patel",
       "isActive": false,
-      "token": "8bfwd7jxtyuhgwvw0068e7g9",
-      "createdAt": "2026-08-26T14:48:50.809Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "jxtyuhgwvw0068e7g9e4ojak",
+      "createdAt": "2025-12-01T15:11:08.804Z"
     },
     {
       "id": "sub_012",
-      "email": "ravi.nguyen@example.com",
-      "name": null,
+      "email": "ravi.murphy@example.com",
+      "name": "Ravi Murphy",
       "isActive": true,
-      "token": "kt7lmlolcoj016hkki4gj8jo",
-      "createdAt": "2026-09-08T09:29:50.301Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "lcoj016hkki4gj8jo5wnv8iy",
+      "createdAt": "2026-10-09T07:49:23.750Z"
     },
     {
       "id": "sub_013",
-      "email": "ella.evans@example.com",
-      "name": "Ella Evans",
-      "isActive": true,
-      "token": "iye1ua3eg35d9mxvmmqe73bu",
-      "createdAt": "2026-06-10T08:44:44.708Z"
+      "email": "ella.nguyen@example.com",
+      "name": "Ella Nguyen",
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "eg35d9mxvmmqe73bulh0mw15",
+      "createdAt": "2026-08-03T13:48:52.481Z"
     },
     {
       "id": "sub_014",
-      "email": "mateo.haddad@example.com",
-      "name": "Mateo Haddad",
+      "email": "mateo.garcia@example.com",
+      "name": null,
       "isActive": true,
-      "token": "15w69r5fbllnc1q4525am82k",
-      "createdAt": "2025-12-17T17:53:04.760Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "bllnc1q4525am82k5qqpaxzo",
+      "createdAt": "2026-10-01T23:24:47.730Z"
     },
     {
       "id": "sub_015",
-      "email": "zara.evans@example.com",
-      "name": null,
-      "isActive": true,
-      "token": "xzoy15eou5kd783ydnl678ym",
-      "createdAt": "2026-04-06T10:58:46.195Z"
+      "email": "zara.ahmed@example.com",
+      "name": "Zara Ahmed",
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "u5kd783ydnl678ymimdv09ob",
+      "createdAt": "2026-08-02T20:47:08.646Z"
     },
     {
       "id": "sub_016",
-      "email": "finn.rossi@example.com",
-      "name": "Finn Rossi",
+      "email": "finn.moreau@example.com",
+      "name": "Finn Moreau",
       "isActive": true,
-      "token": "9ob62l94upsgg8kpk78zwps4",
-      "createdAt": "2026-02-13T02:35:48.960Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "psgg8kpk78zwps4mhqcqpfgm",
+      "createdAt": "2026-08-16T07:40:23.903Z"
     },
     {
       "id": "sub_017",
-      "email": "ines.brown@example.com",
-      "name": "Ines Brown",
-      "isActive": false,
-      "token": "pfgmkidg4ai7p4q11j631txt",
-      "createdAt": "2025-12-21T10:58:37.474Z"
+      "email": "ines.kowalski@example.com",
+      "name": null,
+      "isActive": true,
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "i7p4q11j631txt5143jgjf77",
+      "createdAt": "2026-01-03T02:17:43.865Z"
     },
     {
       "id": "sub_018",
-      "email": "kwame.evans@example.com",
-      "name": "Kwame Evans",
+      "email": "kwame.smith@example.com",
+      "name": "Kwame Smith",
       "isActive": true,
-      "token": "gjf77gtaqhy41zbgc61n75um",
-      "createdAt": "2026-07-29T20:18:59.962Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "41zbgc61n75um6a5113trvzx",
+      "createdAt": "2026-05-06T00:34:51.772Z"
     },
     {
       "id": "sub_019",
-      "email": "lucy.moreau@example.com",
-      "name": "Lucy Moreau",
+      "email": "lucy.dubois@example.com",
+      "name": "Lucy Dubois",
       "isActive": true,
-      "token": "3trvzx181264gwm8t9dm8lxa",
-      "createdAt": "2025-10-04T20:41:07.377Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "gwm8t9dm8lxah4o8whqjr2fp",
+      "createdAt": "2026-10-17T18:34:02.766Z"
     },
     {
       "id": "sub_020",
       "email": "noah.rossi@example.com",
       "name": "Noah Rossi",
       "isActive": true,
-      "token": "hqjr2fphf3wv5t6dfy11tsuv",
-      "createdAt": "2026-09-06T09:57:28.447Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "t6dfy11tsuv2mw0pnk0rjhqc",
+      "createdAt": "2025-11-28T19:46:07.351Z"
     },
     {
       "id": "sub_021",
-      "email": "sofia.dubois@example.com",
-      "name": "Sofia Dubois",
+      "email": "sofia.jensen@example.com",
+      "name": "Sofia Jensen",
       "isActive": true,
-      "token": "nk0rjhqcqdgz6q8a1tjo2ls6",
-      "createdAt": "2026-02-16T14:53:14.563Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "8a1tjo2ls6osyv0sgf9fzq3y",
+      "createdAt": "2025-11-09T04:16:41.921Z"
     },
     {
       "id": "sub_022",
-      "email": "dev.silva@example.com",
-      "name": "Dev Silva",
+      "email": "dev.okafor@example.com",
+      "name": "Dev Okafor",
       "isActive": true,
-      "token": "sgf9fzq3ycnett6qjsax2i3i",
-      "createdAt": "2026-04-24T16:33:44.450Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "qjsax2i3i36kjy8cbybcwbau",
+      "createdAt": "2026-02-24T03:01:50.989Z"
     },
     {
       "id": "sub_023",
-      "email": "amara.kim@example.com",
-      "name": "Amara Kim",
+      "email": "amara.haddad@example.com",
+      "name": "Amara Haddad",
       "isActive": true,
-      "token": "8cbybcwbauler90q32rj0re9",
-      "createdAt": "2026-09-28T06:45:04.830Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "32rj0re9gecvqi4lt678ezkp",
+      "createdAt": "2025-11-17T11:23:13.264Z"
     },
     {
       "id": "sub_024",
-      "email": "felix.smith@example.com",
-      "name": "Felix Smith",
+      "email": "felix.patel@example.com",
+      "name": "Felix Patel",
       "isActive": true,
-      "token": "i4lt678ezkpazr61jvp7qdoh",
-      "createdAt": "2025-11-20T01:56:57.971Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "vp7qdoh68m8r5gm8gme1rwze",
+      "createdAt": "2026-07-11T11:40:32.211Z"
     },
     {
       "id": "sub_025",
-      "email": "nadia.moreau@example.com",
-      "name": "Nadia Moreau",
-      "isActive": true,
-      "token": "5gm8gme1rwze15fcdotu1l6c",
-      "createdAt": "2026-10-24T08:20:52.877Z"
+      "email": "nadia.dubois@example.com",
+      "name": null,
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "otu1l6chcsnwaqako1l5s0le",
+      "createdAt": "2026-09-19T03:59:23.082Z"
     },
     {
       "id": "sub_026",
-      "email": "hugo.rossi@example.com",
-      "name": "Hugo Rossi",
+      "email": "hugo.kim@example.com",
+      "name": null,
       "isActive": true,
-      "token": "aqako1l5s0le2homacr9ccd5",
-      "createdAt": "2025-10-28T12:16:07.652Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "r9ccd520oy3f13f5cz26k21o",
+      "createdAt": "2025-12-21T09:44:31.297Z"
     },
     {
       "id": "sub_027",
-      "email": "rosa.dubois@example.com",
-      "name": "Rosa Dubois",
+      "email": "rosa.clarke@example.com",
+      "name": "Rosa Clarke",
       "isActive": true,
-      "token": "f13f5cz26k21o87xruoxv3kd",
-      "createdAt": "2026-07-19T09:31:45.163Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "xv3kd4kgis4zsgap2d7ehxpa",
+      "createdAt": "2026-10-05T15:31:42.248Z"
     },
     {
       "id": "sub_028",
-      "email": "ike.kim@example.com",
-      "name": "Ike Kim",
+      "email": "ike.brown@example.com",
+      "name": "Ike Brown",
       "isActive": true,
-      "token": "4zsgap2d7ehxpan9a0dm71u7",
-      "createdAt": "2026-01-23T04:14:01.975Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "71u7rbq128v88e2l88nja1v7",
+      "createdAt": "2026-10-26T00:37:47.330Z"
     },
     {
       "id": "sub_029",
-      "email": "mei.jensen@example.com",
-      "name": "Mei Jensen",
+      "email": "mei.okafor@example.com",
+      "name": "Mei Okafor",
       "isActive": true,
-      "token": "8v88e2l88nja1v7cpfr5635t",
-      "createdAt": "2025-10-14T11:16:16.992Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "35tvg673t83y91c3sdm5xzpi",
+      "createdAt": "2026-03-19T03:57:59.026Z"
     },
     {
       "id": "sub_030",
-      "email": "arlo.tanaka@example.com",
-      "name": "Arlo Tanaka",
+      "email": "arlo.kowalski@example.com",
+      "name": "Arlo Kowalski",
       "isActive": true,
-      "token": "t83y91c3sdm5xzpik6wg1hbk",
-      "createdAt": "2025-12-11T21:36:30.075Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "bkhjoeaju5aeeesjphj8rnec",
+      "createdAt": "2026-09-30T15:07:44.422Z"
     },
     {
       "id": "sub_031",
       "email": "yara.rossi@example.com",
-      "name": null,
-      "isActive": false,
-      "token": "ju5aeeesjphj8rnechfdqf7e",
-      "createdAt": "2026-01-13T09:23:13.495Z"
+      "name": "Yara Rossi",
+      "isActive": true,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "ewckiklbxxil5ufobxd49l0d",
+      "createdAt": "2025-12-01T02:18:41.855Z"
     },
     {
       "id": "sub_032",
-      "email": "ben.garcia@example.com",
-      "name": "Ben Garcia",
+      "email": "ben.dubois@example.com",
+      "name": "Ben Dubois",
       "isActive": true,
-      "token": "lbxxil5ufobxd49l0d25dtdr",
-      "createdAt": "2025-10-30T07:10:18.186Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "3hb166lghhhd2rgzn8f8u6jm",
+      "createdAt": "2026-09-11T02:20:06.013Z"
     },
     {
       "id": "sub_033",
       "email": "lena.kim@example.com",
       "name": "Lena Kim",
       "isActive": true,
-      "token": "6lghhhd2rgzn8f8u6jm3h41k",
-      "createdAt": "2025-12-24T00:43:33.866Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "0sc81beuccpbju2qvjvkprtj",
+      "createdAt": "2025-12-19T20:38:12.797Z"
     },
     {
       "id": "sub_034",
-      "email": "kai.brown@example.com",
-      "name": "Kai Brown",
-      "isActive": false,
-      "token": "1beuccpbju2qvjvkprtjis9w",
-      "createdAt": "2026-07-26T12:34:00.264Z"
+      "email": "kai.rossi@example.com",
+      "name": "Kai Rossi",
+      "isActive": true,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "vgb0hktc7inv90z5aedxdne9",
+      "createdAt": "2026-04-19T23:44:40.506Z"
     },
     {
       "id": "sub_035",
-      "email": "esme.kowalski@example.com",
-      "name": null,
+      "email": "esme.okafor@example.com",
+      "name": "Esme Okafor",
       "isActive": true,
-      "token": "0hktc7inv90z5aedxdne9c0x",
-      "createdAt": "2026-05-21T14:10:36.060Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "wlqetbnhgue46r9rp29w3imo",
+      "createdAt": "2026-07-20T15:22:36.746Z"
     },
     {
       "id": "sub_036",
-      "email": "theo.tanaka@example.com",
-      "name": "Theo Tanaka",
+      "email": "theo.okafor@example.com",
+      "name": "Theo Okafor",
       "isActive": true,
-      "token": "qetbnhgue46r9rp29w3imoc1",
-      "createdAt": "2026-07-08T17:09:10.418Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "n2e2qilo1ppu2c7vpi6fw3fr",
+      "createdAt": "2026-07-28T03:45:46.327Z"
     },
     {
       "id": "sub_037",
-      "email": "anya.smith@example.com",
-      "name": "Anya Smith",
+      "email": "anya.garcia@example.com",
+      "name": "Anya Garcia",
       "isActive": true,
-      "token": "2e2qilo1ppu2c7vpi6fw3frw",
-      "createdAt": "2026-06-14T15:14:48.872Z"
+      "tier": "free",
+      "renewsAt": null,
+      "token": "d22s2qypbk5l32tcnxeh2aqw",
+      "createdAt": "2026-06-24T00:43:38.426Z"
     },
     {
       "id": "sub_038",
-      "email": "jude.ahmed@example.com",
-      "name": "Jude Ahmed",
+      "email": "jude.rossi@example.com",
+      "name": "Jude Rossi",
       "isActive": true,
-      "token": "d22s2qypbk5l32tcnxeh2aqw",
-      "createdAt": "2025-10-13T04:49:09.611Z"
-    },
-    {
-      "id": "sub_039",
-      "email": "mira.rossi@example.com",
-      "name": "Mira Rossi",
-      "isActive": true,
-      "token": "ta6pzk3jls2m7ihycmln0yc1",
+      "tier": "free",
+      "renewsAt": null,
+      "token": "a6pzk3jls2m7ihycmln0yc13",
       "createdAt": "2026-07-09T02:55:25.956Z"
     },
     {
-      "id": "sub_040",
-      "email": "owen.kim@example.com",
-      "name": "Owen Kim",
+      "id": "sub_039",
+      "email": "mira.clarke@example.com",
+      "name": "Mira Clarke",
       "isActive": true,
-      "token": "9x5whcqnafvmbxlj8ifrzqk7",
-      "createdAt": "2026-10-27T04:00:59.003Z"
+      "tier": "paid",
+      "renewsAt": "2027-01-01T00:00:00.000Z",
+      "token": "5whcqnafvmbxlj8ifrzqk738",
+      "createdAt": "2025-12-06T09:48:32.732Z"
+    },
+    {
+      "id": "sub_040",
+      "email": "owen.evans@example.com",
+      "name": "Owen Evans",
+      "isActive": false,
+      "tier": "free",
+      "renewsAt": null,
+      "token": "35yeqhwg7v59x4d3mgy7aaor",
+      "createdAt": "2025-12-07T17:42:32.524Z"
     }
   ],
   "issues": [
