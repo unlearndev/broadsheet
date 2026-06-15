@@ -43,6 +43,13 @@ describe('payment webhooks', () => {
     expect(db().subscribers[0].tier).toBe('free')
   })
 
+  it('ignores a retried event', async () => {
+    await post(created)
+    await post(created)
+
+    expect(outboxEmails()).toHaveLength(1)
+  })
+
   it('downgrades on cancellation', async () => {
     await post(created)
     await post({ id: 'evt_2', type: 'subscription.cancelled', data: { email: 'ada@example.com' } })

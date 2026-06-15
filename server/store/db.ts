@@ -2,23 +2,31 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname } from 'node:path'
 import type { Issue, Subscriber } from '../../shared/types'
 
+export interface ProcessedEvent {
+  id: string
+  receivedAt: string
+}
+
 export interface Data {
   subscribers: Subscriber[]
   issues: Issue[]
+  processedEvents: ProcessedEvent[]
 }
 
-let data: Data = { subscribers: [], issues: [] }
+const empty = (): Data => ({ subscribers: [], issues: [], processedEvents: [] })
+
+let data: Data = empty()
 let file: string | null = null
 
 export function loadDb(path: string, seedPath = 'data/seed.json'): void {
   file = path
-  data = JSON.parse(readFileSync(existsSync(path) ? path : seedPath, 'utf8')) as Data
+  data = { ...empty(), ...(JSON.parse(readFileSync(existsSync(path) ? path : seedPath, 'utf8')) as Partial<Data>) }
   save()
 }
 
 export function useMemoryDb(initial: Partial<Data> = {}): void {
   file = null
-  data = { subscribers: [], issues: [], ...structuredClone(initial) }
+  data = { ...empty(), ...structuredClone(initial) }
 }
 
 export function db(): Data {

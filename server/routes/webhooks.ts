@@ -2,6 +2,7 @@ import { createHmac, timingSafeEqual } from 'node:crypto'
 import { Hono } from 'hono'
 import { sendTemplate } from '../emails/render'
 import { env } from '../env'
+import { events } from '../store/events'
 import { subscribers } from '../store/SubscriberRepository'
 
 interface PaymentEvent {
@@ -22,6 +23,11 @@ webhooks.post('/payments', async (c) => {
   }
 
   const event = JSON.parse(payload) as PaymentEvent
+  if (events.seen(event.id)) {
+    return c.json({ received: true })
+  }
+  events.remember(event.id)
+
   const subscriber = subscribers.findByEmail(event.data.email)
   if (!subscriber) return c.json({ received: true })
 
