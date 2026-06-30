@@ -4,6 +4,7 @@ export interface TemplateData {
   subscriber: Subscriber
   unsubscribeUrl: string
   issue?: Issue
+  renewsAt?: string | null
 }
 
 export interface RenderedEmail {
