@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "check": "npm run typecheck && npm test && npm run build",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx scripts/seed.ts",
+    "migrate:status": "tsx scripts/migrate-subscriber-status.ts"
   },
   "dependencies": {
     "@hono/node-server": "^2.1.6",

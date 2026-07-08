@@ -10,7 +10,7 @@ beforeEach(() => {
     subscribers: [
       makeSubscriber({ id: 'paid', email: 'paid@example.com', tier: 'paid', renewsAt: '2027-01-01T00:00:00Z' }),
       makeSubscriber({ id: 'free', email: 'free@example.com' }),
-      makeSubscriber({ id: 'gone', email: 'gone@example.com', tier: 'paid', isActive: false }),
+      makeSubscriber({ id: 'gone', email: 'gone@example.com', tier: 'paid', status: 'unsubscribed' }),
     ],
   })
 })

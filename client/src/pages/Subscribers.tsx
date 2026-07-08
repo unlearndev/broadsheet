@@ -27,7 +27,7 @@ export default function Subscribers() {
               <td>{subscriber.email}</td>
               <td>{subscriber.name ?? '—'}</td>
               <td>{subscriber.tier === 'paid' ? 'Paid' : 'Free'}</td>
-              <td>{subscriber.isActive ? 'Active' : 'Unsubscribed'}</td>
+              <td>{subscriber.status === 'active' ? 'Active' : 'Unsubscribed'}</td>
             </tr>
           ))}
         </tbody>

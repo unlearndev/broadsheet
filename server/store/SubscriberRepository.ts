@@ -17,17 +17,17 @@ export class SubscriberRepository extends BaseRepository<Subscriber> {
   }
 
   active(): Subscriber[] {
-    return this.where((subscriber) => subscriber.isActive)
+    return this.where((subscriber) => subscriber.status === 'active')
   }
 
   paid(): Subscriber[] {
-    return this.where((subscriber) => subscriber.isActive && subscriber.tier === 'paid')
+    return this.where((subscriber) => subscriber.status === 'active' && subscriber.tier === 'paid')
   }
 
   subscribe(email: string, name: string | null = null): Subscriber {
     const existing = this.findByEmail(email)
     if (existing) {
-      if (!existing.isActive) this.update(existing.id, { isActive: true })
+      if (existing.status !== 'active') this.update(existing.id, { status: 'active' })
       return existing
     }
 
@@ -35,7 +35,7 @@ export class SubscriberRepository extends BaseRepository<Subscriber> {
       id: `sub_${randomUUID().slice(0, 8)}`,
       email: email.trim().toLowerCase(),
       name: name?.trim() || null,
-      isActive: true,
+      status: 'active',
       tier: 'free',
       renewsAt: null,
       token: randomUUID().replaceAll('-', ''),

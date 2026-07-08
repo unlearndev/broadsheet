@@ -12,7 +12,7 @@ export default function Dashboard() {
     api.subscribers().then(setSubscribers)
   }, [])
 
-  const active = subscribers.filter((subscriber) => subscriber.isActive).length
+  const active = subscribers.filter((subscriber) => subscriber.status === 'active').length
 
   return (
     <section>

@@ -5,7 +5,7 @@ export function makeSubscriber(overrides: Partial<Subscriber> = {}): Subscriber 
     id: 'sub_1',
     email: 'ada@example.com',
     name: 'Ada',
-    isActive: true,
+    status: 'active',
     tier: 'free',
     renewsAt: null,
     token: 'tok_ada',

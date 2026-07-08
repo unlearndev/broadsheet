@@ -17,13 +17,13 @@ describe('unsubscribe links', () => {
 
     expect(res.status).toBe(200)
     expect(await res.text()).toContain('You’re unsubscribed')
-    expect(db().subscribers[0].isActive).toBe(false)
+    expect(db().subscribers[0].status).toBe('unsubscribed')
   })
 
   it('shows a friendly page for an unknown token', async () => {
     const res = await app.request('/u/nope')
 
     expect(res.status).toBe(404)
-    expect(db().subscribers[0].isActive).toBe(true)
+    expect(db().subscribers[0].status).toBe('active')
   })
 })

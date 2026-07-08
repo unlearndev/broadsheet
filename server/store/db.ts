@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname } from 'node:path'
 import type { Issue, Subscriber } from '../../shared/types'
+import { normalizeSubscriber } from '../lib/normalizeSubscriber'
 
 export interface ProcessedEvent {
   id: string
@@ -20,7 +21,8 @@ let file: string | null = null
 
 export function loadDb(path: string, seedPath = 'data/seed.json'): void {
   file = path
-  data = { ...empty(), ...(JSON.parse(readFileSync(existsSync(path) ? path : seedPath, 'utf8')) as Partial<Data>) }
+  const raw = JSON.parse(readFileSync(existsSync(path) ? path : seedPath, 'utf8')) as Partial<Data>
+  data = { ...empty(), ...raw, subscribers: (raw.subscribers ?? []).map(normalizeSubscriber) }
   save()
 }
 

@@ -1,8 +1,10 @@
+export type SubscriberStatus = 'active' | 'unsubscribed'
+
 export interface Subscriber {
   id: string
   email: string
   name: string | null
-  isActive: boolean
+  status: SubscriberStatus
   tier: 'free' | 'paid'
   renewsAt: string | null
   token: string

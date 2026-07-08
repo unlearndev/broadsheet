@@ -14,7 +14,7 @@ unsubscribe.get('/:token', (c) => {
     )
   }
 
-  subscribers.update(subscriber.id, { isActive: false })
+  subscribers.update(subscriber.id, { status: 'unsubscribed' })
 
   return c.html(page('You’re unsubscribed', `We won’t send any more issues to ${escapeHtml(subscriber.email)}.`))
 })

@@ -9,7 +9,7 @@ beforeEach(() => {
   useMemoryDb({
     subscribers: [
       makeSubscriber({ id: 'sub_1', email: 'ada@example.com', token: 'tok_ada' }),
-      makeSubscriber({ id: 'sub_2', email: 'bo@example.com', isActive: false, token: 'tok_bo' }),
+      makeSubscriber({ id: 'sub_2', email: 'bo@example.com', status: 'unsubscribed', token: 'tok_bo' }),
     ],
     issues: [makeIssue()],
   })
