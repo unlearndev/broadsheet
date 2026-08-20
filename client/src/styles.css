@@ -46,3 +46,4 @@ button:disabled { opacity: 0.5; cursor: default; }
 .actions { display: flex; gap: 12px; align-items: center; }
 button.secondary { background: transparent; color: var(--fg); border: 1px solid var(--fg); }
 .notice { color: #15803d; }
+.search { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; min-width: 260px; }

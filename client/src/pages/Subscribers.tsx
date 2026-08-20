@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 import type { Subscriber } from '../../../shared/types'
 import { api } from '../api'
+import { useSubscriberSearch } from '../hooks/useSubscriberSearch'
 
 export default function Subscribers() {
   const [subscribers, setSubscribers] = useState<Subscriber[]>([])
+  const [query, setQuery] = useState('')
+  const results = useSubscriberSearch(subscribers, query)
 
   useEffect(() => {
     api.subscribers().then(setSubscribers)
@@ -11,7 +14,10 @@ export default function Subscribers() {
 
   return (
     <section>
-      <h1>Subscribers</h1>
+      <div className="section-header">
+        <h1>Subscribers</h1>
+        <input className="search" type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search by email or name" />
+      </div>
       <table className="table">
         <thead>
           <tr>
@@ -22,7 +28,7 @@ export default function Subscribers() {
           </tr>
         </thead>
         <tbody>
-          {subscribers.map((subscriber) => (
+          {results.map((subscriber) => (
             <tr key={subscriber.id}>
               <td>{subscriber.email}</td>
               <td>{subscriber.name ?? '—'}</td>
