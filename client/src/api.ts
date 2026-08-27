@@ -20,7 +20,8 @@ export const api = {
     request<Issue>(`/issues/${id}/schedule`, { method: 'POST', body: JSON.stringify({ scheduledFor }) }),
   sendIssue: (id: string) =>
     request<{ sent: number; failed: number }>(`/issues/${id}/send`, { method: 'POST' }),
-  subscribers: () => request<Subscriber[]>('/subscribers'),
+  subscribers: (query = '') =>
+    request<Subscriber[]>(query ? `/subscribers?q=${encodeURIComponent(query)}` : '/subscribers'),
   subscribe: (input: { email: string; name: string }) =>
     request<Subscriber>('/subscribers', { method: 'POST', body: JSON.stringify(input) }),
 }

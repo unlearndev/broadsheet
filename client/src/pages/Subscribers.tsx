@@ -1,16 +1,17 @@
-import { useEffect, useState } from 'react'
+import debounce from 'lodash/debounce'
+import { useEffect, useMemo, useState } from 'react'
 import type { Subscriber } from '../../../shared/types'
 import { api } from '../api'
-import { useSubscriberSearch } from '../hooks/useSubscriberSearch'
 
 export default function Subscribers() {
   const [subscribers, setSubscribers] = useState<Subscriber[]>([])
   const [query, setQuery] = useState('')
-  const results = useSubscriberSearch(subscribers, query)
+
+  const search = useMemo(() => debounce((value: string) => api.subscribers(value).then(setSubscribers), 250), [])
 
   useEffect(() => {
-    api.subscribers().then(setSubscribers)
-  }, [])
+    search(query)
+  }, [query, search])
 
   return (
     <section>
@@ -28,7 +29,7 @@ export default function Subscribers() {
           </tr>
         </thead>
         <tbody>
-          {results.map((subscriber) => (
+          {subscribers.map((subscriber) => (
             <tr key={subscriber.id}>
               <td>{subscriber.email}</td>
               <td>{subscriber.name ?? '—'}</td>

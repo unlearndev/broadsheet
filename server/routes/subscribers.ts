@@ -5,7 +5,13 @@ import { subscribers as repo } from '../store/SubscriberRepository'
 
 const subscribers = new Hono()
 
-subscribers.get('/', (c) => c.json(repo.all()))
+subscribers.get('/', (c) => {
+  const query = c.req.query('q')?.trim()
+  const results = query ? repo.search(query) : repo.all()
+  console.log('DEBUG search', { query, results: results.length })
+
+  return c.json(results)
+})
 
 subscribers.post('/', async (c) => {
   const { email, name } = await c.req.json<{ email?: string; name?: string }>()

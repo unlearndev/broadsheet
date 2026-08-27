@@ -16,6 +16,19 @@ beforeEach(() => {
   useMemoryDb()
 })
 
+describe('searching', () => {
+  it('matches email or name, case-insensitively', async () => {
+    await subscribe({ email: 'ada@example.com', name: 'Ada Lovelace' })
+    await subscribe({ email: 'grace@example.com', name: 'Grace Hopper' })
+
+    const byName = (await (await app.request('/api/subscribers?q=LOVELACE')).json()) as { email: string }[]
+    const byEmail = (await (await app.request('/api/subscribers?q=grace@')).json()) as { email: string }[]
+
+    expect(byName.map((s) => s.email)).toEqual(['ada@example.com'])
+    expect(byEmail.map((s) => s.email)).toEqual(['grace@example.com'])
+  })
+})
+
 describe('subscribing', () => {
   it('adds a subscriber', async () => {
     const res = await subscribe({ email: 'Ada@Example.com', name: 'Ada' })

@@ -24,6 +24,13 @@ export class SubscriberRepository extends BaseRepository<Subscriber> {
     return this.where((subscriber) => subscriber.status === 'active' && subscriber.tier === 'paid')
   }
 
+  search(query: string): Subscriber[] {
+    const needle = query.trim().toLowerCase()
+    return this.where(
+      (subscriber) => subscriber.email.includes(needle) || (subscriber.name ?? '').toLowerCase().includes(needle),
+    )
+  }
+
   subscribe(email: string, name: string | null = null): Subscriber {
     const existing = this.findByEmail(email)
     if (existing) {
