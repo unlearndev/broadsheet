@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { isValidEmail } from '../../shared/validation'
 import { sendTemplate } from '../emails/render'
+import { exportSubscribersCsv } from '../lib/export/csvExporter'
 import { subscribers as repo } from '../store/SubscriberRepository'
 
 const subscribers = new Hono()
@@ -11,6 +12,12 @@ subscribers.get('/', (c) => {
   console.log('DEBUG search', { query, results: results.length })
 
   return c.json(results)
+})
+
+subscribers.get('/export', (c) => {
+  c.header('Content-Type', 'text/csv; charset=utf-8')
+  c.header('Content-Disposition', 'attachment; filename="subscribers.csv"')
+  return c.body(exportSubscribersCsv(repo.all()))
 })
 
 subscribers.post('/', async (c) => {

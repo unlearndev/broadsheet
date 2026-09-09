@@ -17,6 +17,7 @@ export default function Subscribers() {
     <section>
       <div className="section-header">
         <h1>Subscribers</h1>
+        <a className="button secondary" href="/api/subscribers/export">Export CSV</a>
         <input className="search" type="search" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search by email or name" />
       </div>
       <table className="table">
