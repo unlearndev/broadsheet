@@ -29,6 +29,19 @@ describe('searching', () => {
   })
 })
 
+describe('exporting', () => {
+  it('downloads every subscriber as CSV', async () => {
+    await subscribe({ email: 'ada@example.com', name: 'Ada' })
+
+    const res = await app.request('/api/subscribers/export')
+    const csv = await res.text()
+
+    expect(res.headers.get('content-type')).toContain('text/csv')
+    expect(csv.split('\r\n')[0]).toBe('email,name,status,tier,createdAt')
+    expect(csv).toContain('ada@example.com,Ada,active,free,')
+  })
+})
+
 describe('subscribing', () => {
   it('adds a subscriber', async () => {
     const res = await subscribe({ email: 'Ada@Example.com', name: 'Ada' })
