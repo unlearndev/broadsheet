@@ -18,6 +18,7 @@ export function makeIssue(overrides: Partial<Issue> = {}): Issue {
   return {
     id: 'iss_1',
     title: 'Hello',
+    slug: 'hello',
     body: 'First.\n\nSecond.',
     status: 'draft',
     scheduledFor: null,

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import type { IssueStatus } from '../../../shared/types'
+import { toSlug } from '../../../shared/strings'
 import { api } from '../api'
 
 export default function IssueEditor() {
@@ -46,6 +47,7 @@ export default function IssueEditor() {
   return (
     <section className="editor">
       <input className="title-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Issue title" />
+      <p className="slug">/p/{toSlug(title) || 'your-title-here'}</p>
       <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={18} placeholder="Write something worth reading" />
       <div className="preview">
         <h2>{title}</h2>

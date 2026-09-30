@@ -18,7 +18,7 @@ describe('issues', () => {
     })
 
     expect(res.status).toBe(201)
-    expect(await res.json()).toMatchObject({ title: 'Hello', status: 'draft' })
+    expect(await res.json()).toMatchObject({ title: 'Hello', slug: 'hello', status: 'draft' })
   })
 
   it('requires a title', async () => {

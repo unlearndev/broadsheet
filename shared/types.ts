@@ -16,6 +16,7 @@ export type IssueStatus = 'draft' | 'scheduled' | 'sent'
 export interface Issue {
   id: string
   title: string
+  slug: string
   body: string
   status: IssueStatus
   scheduledFor: string | null

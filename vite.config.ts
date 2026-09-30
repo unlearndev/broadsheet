@@ -7,6 +7,7 @@ export default defineConfig({
     proxy: {
       '/api': 'http://localhost:3000',
       '^/u/': 'http://localhost:3000',
+      '^/p/': 'http://localhost:3000',
       '/webhooks': 'http://localhost:3000',
     },
   },

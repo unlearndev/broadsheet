@@ -405,6 +405,7 @@
     {
       "id": "iss_001",
       "title": "Why we started this",
+      "slug": "why-we-started-this",
       "body": "Why we started this.\n\nThis is the body of issue 1. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -414,6 +415,7 @@
     {
       "id": "iss_002",
       "title": "The tools we actually use",
+      "slug": "the-tools-we-actually-use",
       "body": "The tools we actually use.\n\nThis is the body of issue 2. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -423,6 +425,7 @@
     {
       "id": "iss_003",
       "title": "Notes from the road",
+      "slug": "notes-from-the-road",
       "body": "Notes from the road.\n\nThis is the body of issue 3. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -432,6 +435,7 @@
     {
       "id": "iss_004",
       "title": "What a year of writing taught us",
+      "slug": "what-a-year-of-writing-taught-us",
       "body": "What a year of writing taught us.\n\nThis is the body of issue 4. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -441,6 +445,7 @@
     {
       "id": "iss_005",
       "title": "Small teams, big lists",
+      "slug": "small-teams-big-lists",
       "body": "Small teams, big lists.\n\nThis is the body of issue 5. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -450,6 +455,7 @@
     {
       "id": "iss_006",
       "title": "The quiet launch",
+      "slug": "the-quiet-launch",
       "body": "The quiet launch.\n\nThis is the body of issue 6. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -459,6 +465,7 @@
     {
       "id": "iss_007",
       "title": "Reading list: autumn",
+      "slug": "reading-list-autumn",
       "body": "Reading list: autumn.\n\nThis is the body of issue 7. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "sent",
       "scheduledFor": null,
@@ -468,6 +475,7 @@
     {
       "id": "iss_008",
       "title": "Behind the numbers",
+      "slug": "behind-the-numbers",
       "body": "Behind the numbers.\n\nThis is the body of issue 8. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "scheduled",
       "scheduledFor": "2026-11-12T08:00:00.000Z",
@@ -477,6 +485,7 @@
     {
       "id": "iss_009",
       "title": "Café Society",
+      "slug": "cafe-society",
       "body": "Café Society.\n\nThis is the body of issue 9. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "draft",
       "scheduledFor": null,
@@ -486,6 +495,7 @@
     {
       "id": "iss_010",
       "title": "Five things we got wrong",
+      "slug": "five-things-we-got-wrong",
       "body": "Five things we got wrong.\n\nThis is the body of issue 10. It's written in plain paragraphs.\n\nThanks for reading, and see you next time.",
       "status": "draft",
       "scheduledFor": null,
