@@ -48,3 +48,11 @@ button.secondary { background: transparent; color: var(--fg); border: 1px solid 
 .notice { color: #15803d; }
 .search { font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; min-width: 260px; }
 .slug { margin: -8px 0 0; color: var(--muted); font: 13px ui-monospace, monospace; }
+.new-editor { display: grid; gap: 8px; }
+.toolbar { display: flex; gap: 6px; align-items: center; }
+.toolbar button { background: transparent; color: var(--fg); border: 1px solid var(--line); padding: 4px 10px; }
+.word-count { margin-left: auto; color: var(--muted); font-size: 13px; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.split textarea { min-height: 420px; font: 16px/1.6 ui-monospace, monospace; padding: 12px; border: 1px solid var(--line); border-radius: 6px; }
+.split .preview { border-top: 0; padding-top: 0; }
+blockquote { border-left: 3px solid var(--line); margin: 0; padding-left: 12px; color: var(--muted); }

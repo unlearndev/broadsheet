@@ -3,10 +3,14 @@ import { useNavigate, useParams } from 'react-router'
 import type { IssueStatus } from '../../../shared/types'
 import { toSlug } from '../../../shared/strings'
 import { api } from '../api'
+import LegacyEditor from '../components/LegacyEditor'
+import NewEditor from '../components/NewEditor'
+import { useFlags } from '../flags'
 
 export default function IssueEditor() {
   const { id } = useParams()
   const navigate = useNavigate()
+  const flags = useFlags()
   const [title, setTitle] = useState('')
   const [body, setBody] = useState('')
   const [status, setStatus] = useState<IssueStatus>('draft')
@@ -48,6 +52,12 @@ export default function IssueEditor() {
     <section className="editor">
       <input className="title-input" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Issue title" />
       <p className="slug">/p/{toSlug(title) || 'your-title-here'}</p>
+      {flags.newEditor ? (
+        <NewEditor title={title} body={body} onChange={setBody} />
+      ) : (
+        <LegacyEditor title={title} body={body} onChange={setBody} />
+      )}
+      {/* Old inline editor, replaced by the editor components above
       <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={18} placeholder="Write something worth reading" />
       <div className="preview">
         <h2>{title}</h2>
@@ -55,6 +65,7 @@ export default function IssueEditor() {
           <p key={i}>{paragraph}</p>
         ))}
       </div>
+      */}
       <div className="actions">
         <button onClick={save} disabled={saving || !title.trim() || status === 'sent'}>
           {saving ? 'Saving…' : 'Save draft'}
