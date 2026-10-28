@@ -2,6 +2,7 @@ import debounce from 'lodash/debounce'
 import { useEffect, useMemo, useState } from 'react'
 import type { Subscriber } from '../../../shared/types'
 import { api } from '../api'
+import { formatDate } from '../utils/format'
 
 export default function Subscribers() {
   const [subscribers, setSubscribers] = useState<Subscriber[]>([])
@@ -27,6 +28,7 @@ export default function Subscribers() {
             <th>Name</th>
             <th>Plan</th>
             <th>Status</th>
+            <th>Joined</th>
           </tr>
         </thead>
         <tbody>
@@ -36,6 +38,7 @@ export default function Subscribers() {
               <td>{subscriber.name ?? '—'}</td>
               <td>{subscriber.tier === 'paid' ? 'Paid' : 'Free'}</td>
               <td>{subscriber.status === 'active' ? 'Active' : 'Unsubscribed'}</td>
+              <td>{formatDate(subscriber.createdAt)}</td>
             </tr>
           ))}
         </tbody>

@@ -44,7 +44,11 @@ export async function sendIssue(issue: Issue, options: SendIssueOptions = {}): P
     else failed++
   }
 
-  updateIssue(issue.id, { status: 'sent', sentAt: new Date().toISOString() })
+  updateIssue(issue.id, {
+    status: 'sent',
+    sentAt: new Date().toISOString(),
+    stats: { recipients: sent, opens: 0, clicks: 0 },
+  })
   return { sent, failed }
 }
 

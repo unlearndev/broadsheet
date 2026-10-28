@@ -34,5 +34,6 @@ describe('sendIssue', () => {
 
     expect(db().issues[0].status).toBe('sent')
     expect(db().issues[0].sentAt).not.toBeNull()
+    expect(db().issues[0].stats).toEqual({ recipients: 1, opens: 0, clicks: 0 })
   })
 })

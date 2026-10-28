@@ -20,6 +20,7 @@ export function createIssue(input: { title: string; body: string }): Issue {
     status: 'draft',
     scheduledFor: null,
     sentAt: null,
+    stats: null,
     createdAt: new Date().toISOString(),
   }
   db().issues.push(issue)

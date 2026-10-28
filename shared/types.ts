@@ -11,6 +11,12 @@ export interface Subscriber {
   createdAt: string
 }
 
+export interface IssueStats {
+  recipients: number
+  opens: number
+  clicks: number
+}
+
 export type IssueStatus = 'draft' | 'scheduled' | 'sent'
 
 export interface Issue {
@@ -21,5 +27,6 @@ export interface Issue {
   status: IssueStatus
   scheduledFor: string | null
   sentAt: string | null
+  stats: IssueStats | null
   createdAt: string
 }

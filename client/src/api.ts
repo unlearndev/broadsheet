@@ -1,5 +1,14 @@
 import type { Issue, Subscriber } from '../../shared/types'
 
+export interface Stats {
+  activeSubscribers: number
+  paidSubscribers: number
+  issuesSent: number
+  openRate: number
+  clickRate: number
+  lastSentAt: string | null
+}
+
 async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
   const res = await fetch(`/api${path}`, {
     ...init,
@@ -22,6 +31,7 @@ export const api = {
     request<{ sent: number; failed: number }>(`/issues/${id}/send`, { method: 'POST' }),
   subscribers: (query = '') =>
     request<Subscriber[]>(query ? `/subscribers?q=${encodeURIComponent(query)}` : '/subscribers'),
+  stats: () => request<Stats>('/stats'),
   subscribe: (input: { email: string; name: string }) =>
     request<Subscriber>('/subscribers', { method: 'POST', body: JSON.stringify(input) }),
 }
