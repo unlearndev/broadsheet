@@ -1,0 +1,12 @@
+{
+  "environment": "production",
+  "exportedAt": "2026-11-08T18:00:00Z",
+  "flags": {
+    "newEditor": {
+      "value": true,
+      "rollout": "100%",
+      "lastChanged": "2026-10-21T10:02:00Z",
+      "changedBy": "maya@weeklybrief.example"
+    }
+  }
+}

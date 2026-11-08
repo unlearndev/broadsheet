@@ -1,0 +1,18 @@
+method,route,requests,distinct_origins,top_origins
+GET,/api/issues,3184,1,news.weeklybrief.example
+GET,/api/issues/:id,1290,1,news.weeklybrief.example
+POST,/api/issues,22,1,news.weeklybrief.example
+PUT,/api/issues/:id,341,1,news.weeklybrief.example
+POST,/api/issues/:id/schedule,4,1,news.weeklybrief.example
+POST,/api/issues/:id/send,1,1,news.weeklybrief.example
+GET,/api/subscribers,5120,1,news.weeklybrief.example
+POST,/api/subscribers,96,1,news.weeklybrief.example
+GET,/api/subscribers/export,11,1,news.weeklybrief.example
+OPTIONS,/api/embed/subscribe,1873,4,www.weeklybrief.example; blog.weeklybrief.example; coffeeandcode.example
+POST,/api/embed/subscribe,1873,4,www.weeklybrief.example; blog.weeklybrief.example; coffeeandcode.example
+GET,/embed.js,9420,4,www.weeklybrief.example; blog.weeklybrief.example; coffeeandcode.example
+GET,/u/:token,318,0,(email links)
+GET,/p/:slug,4410,0,(email links and search)
+POST,/webhooks/payments,212,1,payments-provider
+GET,/api/flags,1604,1,news.weeklybrief.example
+GET,/api/stats,2210,1,news.weeklybrief.example

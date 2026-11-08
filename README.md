@@ -2,6 +2,9 @@
 
 A small newsletter app: write issues, manage subscribers, send.
 
+> This is the demo app for the **Subtractive Engineering** workshop from [Unlearn](https://unlearn.dev).
+> `ops/` holds exports from production (route hits, job runs, flag values).
+
 ## Stack
 
 - **API:** [Hono](https://hono.dev) on Node, run with `tsx`
