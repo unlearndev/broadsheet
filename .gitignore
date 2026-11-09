@@ -3,3 +3,8 @@ dist
 data/db.json
 .env
 .DS_Store
+
+# Agent skills installed during the workshop
+.agents/
+.claude/skills/
+skills-lock.json

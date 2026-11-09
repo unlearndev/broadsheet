@@ -31,4 +31,5 @@ The dashboard runs on http://localhost:5173 and the API on http://localhost:3000
 | `npm test` | Run the tests |
 | `npm run typecheck` | Type-check everything |
 | `npm run check` | Typecheck, tests and build. Run this before you push. |
+| `npm run knip` | Find unused files, exports and dependencies |
 | `npm run seed` | Reset `data/db.json` from the seed data |

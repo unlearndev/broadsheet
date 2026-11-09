@@ -12,6 +12,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "check": "npm run typecheck && npm test && npm run build",
+    "knip": "knip",
     "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
@@ -35,6 +36,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
     "concurrently": "^10.0.7",
+    "knip": "^6.44.2",
     "typescript": "^7.0.2",
     "vite": "^8.3.6",
     "vitest": "^5.1.0"
