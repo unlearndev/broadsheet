@@ -1,3 +1,4 @@
+import { PUBLICATION } from '../../../shared/publication'
 import { escapeHtml, layout } from '../layout'
 import type { Template } from '../types'
 
@@ -5,7 +6,7 @@ export const welcomeEmail: Template = ({ subscriber, unsubscribeUrl }) => {
   const greeting = subscriber.name ? `Hi ${escapeHtml(subscriber.name)},` : 'Hi there,'
 
   return {
-    subject: 'Welcome to The Weekly Brief',
+    subject: `Welcome to ${PUBLICATION}`,
     html: layout(
       `<p>${greeting}</p>
 <p>Thanks for subscribing. A new issue lands every other Thursday morning.</p>

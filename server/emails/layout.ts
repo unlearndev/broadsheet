@@ -1,4 +1,4 @@
-const PUBLICATION = 'The Weekly Brief'
+import { PUBLICATION } from '../../shared/publication'
 
 export function escapeHtml(value: string): string {
   return value
